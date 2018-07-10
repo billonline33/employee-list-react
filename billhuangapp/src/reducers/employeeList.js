@@ -1,4 +1,5 @@
 import axios from "axios";
+import config from "../dev-config";
 const LOAD_EMPLOYEE_LIST = "employeeList/LOAD_EMPLOYEE_LIST";
 
 const initialState = {
@@ -20,7 +21,9 @@ export default (state = initialState, action) => {
 };
 
 const getEmployeeInfo = (sortByField, searchValue) => {
-  let apiUrl = `$/api/employees?_sort=${sortByField}&_order=asc&${sortByField}_like=${searchValue}`;
+  let apiUrl = `${
+    config.API_BASE_URL
+  }/employees?_sort=${sortByField}&_order=asc&${sortByField}_like=${searchValue}`;
   return axios.get(apiUrl);
 };
 

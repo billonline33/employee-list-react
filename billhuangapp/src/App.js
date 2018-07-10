@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import config from "./dev-config";
 import "./App.css";
 import Header from "./components/Layout/Header/Header";
 import MainContent from "./components/Layout/MainContent/MainContent";
@@ -13,7 +14,9 @@ class App extends Component {
   }
 
   getCompanyInfo() {
-    axios.get("/api/companyInfo").then(response => {
+    let apiUrl = `${config.API_BASE_URL}/companyInfo`;
+    console.log("api url=", apiUrl);
+    axios.get(apiUrl).then(response => {
       console.log("comp Info: ", response.data);
       this.setState({ companyInfo: response.data });
     });
