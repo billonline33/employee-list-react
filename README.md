@@ -1,7 +1,17 @@
-﻿There are several ways to read data from sample-data.json, in the real scenario it would be read from web service.
+There are several ways to read data from sample-data.json, in the real scenario it would be read from web service. For that reason, I created a dummy json-server to simulate the web service.
 
-For that reason, I created a dummy json-server to simulate the web service.
+To run the app from your local computer, run  "npm start",josn-server will be started automatically and run on port 3001.
 
-Also in a real project, I would have two separate components for search aren and employee list, and use redux to manage state. To simplify the issue, I combined them together.
+Redux is not really required for a simple project like this. However, I assume the manager wants to test the candidates' redux skills, so I continue added code to use redux.
 
-I may submit another version using redux later.
+I have also published the site to heroku, which can be found on http://employee-list-react.herokuapp.com/
+
+I have also publised the site on AWS S3, which can be found on http://employee-list-react.s3-website-ap-southeast-2.amazonaws.com
+
+
+You can also run the web service on https://employee-list-api.herokuapp.com/
+
+How the demo works:
+
+1. Select "Sort By" will change the sort by field.
+2. depends on the current sort by field, you can enter the search value. e.g. if the current Sort By is firstName, and you enter as in search box, it returns all employees who first name contains "as".
