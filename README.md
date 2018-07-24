@@ -4,6 +4,8 @@ To run the app from your local computer, run  "npm start",josn-server will be st
 
 Redux is not really required for a simple project like this. However, for demonstrate purpose, I use redux to manage state.
 
+For a sample React App which does not use Redux, please see my other sample [hCard Builder](https://github.com/billonline33/hcard-builder)
+
 I have also published the site to heroku, which can be found on http://employee-list-react.herokuapp.com/
 
 I have also publised the site on AWS S3, which can be found on http://employee-list-react.s3-website-ap-southeast-2.amazonaws.com
