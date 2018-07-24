@@ -2,7 +2,7 @@ There are several ways to read data from sample-data.json, in the real scenario 
 
 To run the app from your local computer, run  "npm start",josn-server will be started automatically and run on port 3001.
 
-Redux is not really required for a simple project like this. However, I assume the manager wants to test the candidates' redux skills, so I continue added code to use redux.
+Redux is not really required for a simple project like this. However, for demonstrate purpose, I use redux to manage state.
 
 I have also published the site to heroku, which can be found on http://employee-list-react.herokuapp.com/
 
