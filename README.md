@@ -1,22 +1,26 @@
+## Table of Content
+
 - [Welcome to my React + Redux + Redux-Thunk demo](#welcome-to-my-react---redux---redux-thunk-demo)
-  * [Introduction](#introduction)
-  * [Main Feature](#main-feature)
-  * [Design diagram](#design-diagram)
-  * [Run the application](#run-the-application)
+  * [1. Quick Start](#quick-start)
+  * [2. Main Feature](#main-feature)
+  * [3. Design diagram](#design-diagram)
+  * [4. Run the application](#run-the-application)
     + [Run from the cloud](#run-from-the-cloud)
       - [Restful Web Server - https://employee-list-api.herokuapp.com/](#restful-web-server---https---employee-list-apiherokuappcom-)
       - [Front-end react app](#front-end-react-app)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
 
 # Welcome to my React + Redux + Redux-Thunk demo
 
-## Introduction
+## 1. Quick Start
+
+To run the app from heroku,  Click  [Heroku deployment](http://employee-list-react.herokuapp.com/)
+
+To run the same on  AWS S3, Click [S3 Deployment](http://employee-list-react.s3-website-ap-southeast-2.amazonaws.com/)
 
 
-## Main Feature
+## 2. Main Feature
 
 This is a sample employee list page, with sort and search features
 
@@ -37,7 +41,7 @@ Click on one of the employee, will pop up the details of this employee.
 ![enter image description here](screenshots/popupdetails.PNG)
 
 
-## Design diagram
+## 3. Design diagram
 
 This web page contains two part:
 
@@ -47,7 +51,7 @@ This web page contains two part:
 See below shows the diagram.
 ![enter image description here](screenshots/Diagram.png)
 
-## Run the application
+## 4. Run the application
 
 ### Run from the cloud
 
