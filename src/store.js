@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
-import rootReducer from "./reducers";
+import rootReducer from "./reducers";  // rootReducer can be any name, we just import default export of ./reducers/index.js
 
 const initialState = {};
 const enhancers = [];
