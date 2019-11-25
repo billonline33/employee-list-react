@@ -30,6 +30,7 @@ class MainContent extends Component {
 
   componentDidMount() {
     this.getEmployeeInfo();
+    console.log("mapDispatchToProps111=",mapDispatchToProps);
   }
 
   render() {
@@ -73,12 +74,12 @@ const mapStateToProps = state => ({
   employeeInfo: state.EmployeeList.employeeInfo
 });
 
-const mapDispatchToProps = dispatch =>
-  bindActionCreators({ loadEmployeeList }, dispatch);
+const mapDispatchToProps = { loadEmployeeList };
 
 MainContent = connect(
   mapStateToProps,
   mapDispatchToProps
 )(MainContent);
+
 
 export default MainContent;
