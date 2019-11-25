@@ -30,7 +30,6 @@ class MainContent extends Component {
 
   componentDidMount() {
     this.getEmployeeInfo();
-    console.log("mapDispatchToProps111=",mapDispatchToProps);
   }
 
   render() {
