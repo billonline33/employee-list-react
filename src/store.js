@@ -6,7 +6,7 @@ const initialState = {};
 const enhancers = [];
 const middleware = [thunk];
 
-if (process.env.NODE_ENV == "development") {
+if (process.env.NODE_ENV === "development") {
   const devToolsExtension = window.devToolsExtension;
 
   if (typeof devToolsExtension === "function") {

@@ -6,7 +6,6 @@ import { Col, Row } from "react-bootstrap";
 import { FormControl } from "react-bootstrap";
 import "./MainContent.css";
 import { loadEmployeeList } from "../../../reducers/employeeList";
-import { bindActionCreators } from "redux";
 
 class MainContent extends Component {
   constructor(props) {
