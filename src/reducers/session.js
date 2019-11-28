@@ -54,6 +54,7 @@ export function initSessionFromCallbackURI(callbackHref){
                    return cognitoUtils.getCognitoSession()
                })
                .then((session)=>{
+                   debugger;
                   dispatch({
                     type:SET_SESSION,
                     session

@@ -11,6 +11,7 @@ class Home extends Component {
     render(){
         return(
             <div>
+                <a href={cognitoUtils.getCongitoSignInUri()}>Sign in</a>
                 {this.props.isLoggedIn?
                 (<div>
                     <p>You are login as ....</p>
@@ -24,16 +25,17 @@ class Home extends Component {
         )
     }
 
-    onSignOut(e){
-        e.preventDefault();
-        cognitoUtils.signOutCognitoSession();
-    }
+    // onSignOut(e){
+    //     e.preventDefault();
+    //     cognitoUtils.signOutCognitoSession();
+    // }
 }
 
-const mapStateToProps=(state)=>(
-    {
-    isLoggedIn: state.Session.isLoggedIn
-    }
-)
+// const mapStateToProps=(state)=>(
+//     {
+//     isLoggedIn: state.Session.isLoggedIn
+//     }
+// )
 
-export default connect(mapStateToProps)(Home);
+//export default connect(mapStateToProps)(Home);
+export default Home;

@@ -19,6 +19,9 @@ const composeENhancers = compose(
   ...enhancers
 );
 
-const store = createStore(rootReducer, initialState, composeENhancers);
+const store = (function(){ 
+  console.log("999999");
+  return createStore(rootReducer, initialState, composeENhancers);
+})();
 
 export default store;

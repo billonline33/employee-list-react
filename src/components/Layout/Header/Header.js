@@ -26,6 +26,8 @@ const Header = ({ companyInfo }) => {
             <Col xs={6}>
               <div className={"banner-container"}>
                 <h3>Since {companyEst}</h3>
+                <a href="/home">home</a>
+                <a href="/main">Main</a>
               </div>
             </Col>
           </Row>
