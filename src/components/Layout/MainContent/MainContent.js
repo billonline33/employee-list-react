@@ -7,6 +7,33 @@ import { FormControl } from "react-bootstrap";
 import "./MainContent.css";
 import { loadEmployeeList } from "../../../reducers/employeeList";
 
+import { Route, Link } from 'react-router-dom';
+
+
+const Profile = () => {
+  return (
+    <div>
+      <h2>Profile</h2>
+    </div>
+  );
+};
+
+const Setting = () => {
+  return (
+    <div>
+      <h2>Setting</h2>
+    </div>
+  );
+};
+
+const Account = () => {
+  return (
+    <div>
+      <h2>Account</h2>
+    </div>
+  );
+};
+
 class MainContent extends Component {
   constructor(props) {
     super(props);
@@ -38,8 +65,25 @@ class MainContent extends Component {
 
     return (
       <div className={"content-area"}>
+        <ul>
+          <li>
+            <Link to="/profile">Profile</Link>
+          </li>
+          <li>
+            <Link to="/setting">Setting</Link>
+          </li>
+          <li>
+            <Link to="/account">Account</Link>
+          </li>
+        </ul>
+        <Route path="/profile" component={Profile} />
+        <Route path="/setting" component={Setting} />
+        <Route path="/account" component={Account} />
+
         <div className={"floatLeft"}>
           <h1>Our Employees</h1>
+          
+
         </div>
         <div className={"floatRight"}>
           <div className={"floatLeft"}>
