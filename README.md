@@ -16,15 +16,21 @@ To run the app from heroku,  Click  [Heroku deployment](http://employee-list-rea
 To run the same on  AWS S3, Click [S3 Deployment](http://employee-list-react.s3-website-ap-southeast-2.amazonaws.com/)
 
 <a name="main-feature"></a>
+
+#### See the application in action, run it on [StackBlitz](https://stackblitz.com/github/billonline33/employee-list-react) 
+
+[![stackblitz](screenshots//stackblitz-screenshot.png)](https://stackblitz.com/github/billonline33/employee-list-react)
+
+
 ## 2. Main Feature
 
 This is a sample employee list page, with sort and search features
 
-The home page will show a list of employees
+The home page shows a list of employees
 
 ![home page](screenshots/home.PNG)
 
-You can click the Sort by drop-down, to sort the list.
+You can click "Sort by" drop-down, to sort the list.
 
 ![Sort](screenshots/sort.PNG)
 
